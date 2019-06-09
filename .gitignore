@@ -1,5 +1,6 @@
 # test folder
-./__tests__
+#
+./__tests__/
 # OSX
 #
 .DS_Store

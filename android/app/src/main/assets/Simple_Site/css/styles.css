@@ -1,0 +1,566 @@
+@font-face {
+  font-family: 'Samim-FD';
+  src: url('../fonts/Samim-FD.ttf')
+}
+
+@font-face {
+  font-family: 'Arshia';
+  src: url('../fonts/2Sarshia.ttf')
+}
+
+body
+{
+  padding:0px;
+  margin:0px;
+  direction: rtl;
+  font-family: 'Samim-FD';
+  font-size: 36px;
+}
+
+i {
+  font-size: 60px;
+}
+
+.BaghBoon {
+  width:100%;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  position: absolute;
+}
+
+.header {
+  width:100%;
+  height:10%;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color:#3e2136;
+  color:White;
+}
+
+.main {
+   width:100%;
+  height:80%;
+  background-color:White;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+}
+
+.BaghBoon .main .scroll {
+  width:100%;
+  height:100%;
+  overflow-y: scroll;
+}
+
+.footer {
+   width:100%;
+  height:10%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:#3e2136;
+  color:White;
+}
+
+.search-section {
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content : flex-end;
+  align-items: center;
+}
+
+.search-bar {
+  width:100%;
+  height:95%;
+  display:flex;
+  flex-direction:row;
+  justify-content : center;
+  align-items: center;
+}
+
+.search-bar .field {
+  width:80%;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content : center;
+  align-items: center;
+}
+
+.search-bar .field img {
+  width:90%;
+  height:75%;
+  border: none;
+}
+
+.search-bar div {
+  width:20%;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content : center;
+  align-items: center;
+}
+
+.select-category {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  display: none;
+  background: rgba(0,0,0,0.9);
+  background: -moz-linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0,0,0,0.9)), color-stop(100%, rgba(0,0,0,0.9)));
+  background: -webkit-linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%);
+  background: -o-linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%);
+  background: -ms-linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%);
+  background: linear-gradient(45deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+}
+
+.select-category .text {
+  width: 90%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.select-category a {
+  width: 250px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 54px;
+  margin-top: 50px;
+  text-decoration: none;
+  color: white;
+  background: rgba(243,226,199,1);
+  background: -moz-linear-gradient(45deg, rgba(243,226,199,1) 0%, rgba(193,158,103,1) 50%, rgba(182,141,76,1) 51%, rgba(233,212,179,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(243,226,199,1)), color-stop(50%, rgba(193,158,103,1)), color-stop(51%, rgba(182,141,76,1)), color-stop(100%, rgba(233,212,179,1)));
+  background: -webkit-linear-gradient(45deg, rgba(243,226,199,1) 0%, rgba(193,158,103,1) 50%, rgba(182,141,76,1) 51%, rgba(233,212,179,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(243,226,199,1) 0%, rgba(193,158,103,1) 50%, rgba(182,141,76,1) 51%, rgba(233,212,179,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(243,226,199,1) 0%, rgba(193,158,103,1) 50%, rgba(182,141,76,1) 51%, rgba(233,212,179,1) 100%);
+  background: linear-gradient(45deg, rgba(243,226,199,1) 0%, rgba(193,158,103,1) 50%, rgba(182,141,76,1) 51%, rgba(233,212,179,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3', GradientType=1 );
+}
+
+.select-category a:hover {
+  background: rgba(203,96,179,1);
+background: -moz-linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 50%, rgba(168,0,119,1) 51%, rgba(219,54,164,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(203,96,179,1)), color-stop(50%, rgba(193,70,161,1)), color-stop(51%, rgba(168,0,119,1)), color-stop(100%, rgba(219,54,164,1)));
+background: -webkit-linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 50%, rgba(168,0,119,1) 51%, rgba(219,54,164,1) 100%);
+background: -o-linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 50%, rgba(168,0,119,1) 51%, rgba(219,54,164,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 50%, rgba(168,0,119,1) 51%, rgba(219,54,164,1) 100%);
+background: linear-gradient(45deg, rgba(203,96,179,1) 0%, rgba(193,70,161,1) 50%, rgba(168,0,119,1) 51%, rgba(219,54,164,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4', GradientType=1 );
+}
+
+.category {
+  width:20%;
+  height:100%;
+    display:flex;
+  flex-direction:row;
+  justify-content : center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.home-button {
+  width:20%;
+  height:100%;
+    display:flex;
+  flex-direction:row;
+  justify-content : center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.contact {
+  width:20%;
+  height:100%;
+    display:flex;
+  flex-direction:row;
+  justify-content : center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+
+.products {
+   width:100%;
+  height:50%;
+  display:flex;
+  flex-direction:row;
+  justify-content : center;
+  align-items: center;
+  background-color:white;
+}
+
+.item-image {
+  width:95%;
+  height:90%;
+  display: flex;
+  flex-direction:row;
+  justify-content : center;
+  align-items: center;
+  position: relative;
+}
+
+.item-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.item-image .label {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgba(62,33,54,1);
+  background: -moz-linear-gradient(top, rgba(62,33,54,1) 0%, rgba(62,33,54,0.69) 57%, rgba(62,33,54,0.3) 95%, rgba(62,33,54,0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(62,33,54,1)), color-stop(57%, rgba(62,33,54,0.69)), color-stop(95%, rgba(62,33,54,0.3)), color-stop(100%, rgba(62,33,54,0)));
+  background: -webkit-linear-gradient(top, rgba(62,33,54,1) 0%, rgba(62,33,54,0.69) 57%, rgba(62,33,54,0.3) 95%, rgba(62,33,54,0) 100%);
+  background: -o-linear-gradient(top, rgba(62,33,54,1) 0%, rgba(62,33,54,0.69) 57%, rgba(62,33,54,0.3) 95%, rgba(62,33,54,0) 100%);
+  background: -ms-linear-gradient(top, rgba(62,33,54,1) 0%, rgba(62,33,54,0.69) 57%, rgba(62,33,54,0.3) 95%, rgba(62,33,54,0) 100%);
+  background: linear-gradient(to bottom, rgba(62,33,54,1) 0%, rgba(62,33,54,0.69) 57%, rgba(62,33,54,0.3) 95%, rgba(62,33,54,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e2136', endColorstr='#3e2136', GradientType=0 );
+}
+
+.item-image .label h2 {
+  margin: 0;
+}
+
+.item-image .more {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: auto;
+  height: auto;
+  background-color: #3e2136;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 50px;
+  border : 5px solid white; 
+  text-decoration: none;
+}
+
+.more-info {
+  width:100%;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+.back {
+  width:15%;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content : center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+
+.full-information {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-information .info-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-information .image-block {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-information .image-block img {
+  height: 90%;
+  width: auto;
+}
+
+.full-information .product-features {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: justify;
+}
+
+
+.full-information .scroll-bar {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+.name-section {
+  width:85%;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content : flex-start;
+  align-items: center;
+  font-size: 42px;
+}
+
+.name-section div {
+  margin-right: 30px;
+}
+
+.video-header {
+  width:85%;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content : flex-start;
+  align-items: center;
+  font-size: 42px;
+}
+
+.video-header div , .video-header i {
+  margin-right: 30px;
+}
+
+.back-video {
+  width:15%;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content : center;
+  align-items: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.category-list-page , .Film {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.category-list-page .main , .Film .main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 42px;
+}
+
+.category-list-page .cat {
+  width: 90%;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #050505;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.category-list-page .cat img {
+  width: 120px;
+  height: 120px;
+}
+
+
+.category-list-page .cat p {
+  margin: 0;
+  margin-right: 30px;
+  font-size: 1.0em;
+  color: #050505;
+}
+
+.category-list-page .scroll {
+  width:100%;
+  height:100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Film .scroll {
+  width:100%;
+  height:100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Film .scroll div {
+  width: 90%;
+  height: 400px;
+  margin-top: 100px;
+  text-align: justify;
+}
+
+.Film video {
+  width: 864px;
+  height: 576px;
+  margin-top: 100px;
+
+}
+
+.about-us {
+  width: 100%;
+  height: 90%;
+  background-color: #f1f1f1;
+}
+
+.about-us .scroll {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+
+.about-us .about-baghboon {
+  width: fit-content;
+  height: auto;
+  background-color: #0586a0;
+  color: #f1f1f1;
+  padding: 30px;
+  border-radius: 50px 0px 0px 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.about-us .description-baghboon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  height: 1000px;
+  margin-top: 20px;
+  margin-right: 2.5%;
+}
+
+.about-us .description-baghboon .logo {
+  width: 400px;
+  height: 400px;
+  margin-top: 20px;
+  border-radius: 50%;
+  background-image: url('../images/grass.jpg');
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 174px;
+  /* font-weight: bold; */
+  font-family: 'Arshia';
+}
+
+.about-us .description-baghboon div , .contact-text {
+  width: 100%;
+  height: 540px;
+  margin-top: 20px;
+  color: #000;
+  text-align: justify;
+  font-size: 1.2em;
+}
+
+.about-us .contact-text {
+  height: 300px;
+  width: 95%;
+  margin-right: 2.5%;
+}
+
+.about-us .contact-email {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%;
+  margin-right: 2.5%;
+  color: #000;
+  margin-top: 5px;
+}
+
+.about-us .contact-email div {
+  margin-left: 20px;
+}
+
+.about-us .send-comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about-us input {
+  width: 95%;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.about-us button {
+  margin-top: 20px;
+  width: 25%;
+  height: 100px;
+  background-color: #0586a0;
+  color : #f1f1f1;
+  font-size: 1.4em;
+  border-radius: 50px 50px 50px 50px;
+  font-family: 'Samim-FD';
+  border: none;
+}
+
+.about-us .contact-email i {
+  color: #0586a0;
+}

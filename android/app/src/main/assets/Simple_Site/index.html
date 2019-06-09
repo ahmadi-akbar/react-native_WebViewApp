@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	</head>
+  <body>
+	<div class="BaghBoon">
+	  <div class="header">
+		<div class="search-section">
+		  <div class="search-bar">
+			<a class="field" href="components/about-us.html">
+			  <img src="images/ads-468x60-51.gif" alt="">
+			</a>
+			<div>
+			<i class="fa fa-filter" onclick="selectcat()"></i>
+			</div>
+		</div>
+		</div>
+		</div>
+	  <div class="main">
+		<div class="scroll">
+		<div class="products">
+		  <div class="item-image">
+				<img src="images/kaktoos.jpg">
+			<div class="label"><h2>کاکتوس</h2></div>
+			<a href="Posts/kaktoos.html" class="more">ادامه مطلب ...</a>
+			</div>
+		</div>
+		<div class="products">
+		  <div class="item-image">
+				<img src="images/single-red-rose.jpg">
+			<div class="label"><h2>رز قرمز</h2></div>
+			<a href="Posts/rose.html" class="more">ادامه مطلب ...</a>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="products">
+		  <div class="item-image">
+				<img src="images/sunflower.jpg">
+			<div class="label"><h2>گل آفتاب گردان</h2></div>
+			<a href="Posts/sun-flower.html" class="more">ادامه مطلب ...</a>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="products">
+		  <div class="item-image">
+				<img src="images/پیپرومیا.jpg">
+			<div class="label"><h2>پیرومیا</h2></div>
+			<a href="Posts/piromia.html" class="more">ادامه مطلب ...</a>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="products">
+		  <div class="item-image">
+				<img src="images/بگونیا.jpg">
+			<div class="label"><h2>بگونیا</h2></div>
+			<a href="Posts/begunia.html" class="more">ادامه مطلب ...</a>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="products">
+		  <div class="item-image">
+				<img src="images/داوودی.jpg">
+			<div class="label"><h2>داوودی</h2></div>
+			<a href="Posts/davoodi.html" class="more">ادامه مطلب ...</a>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="products">
+		  <div class="item-image">
+				<img src="images/لاله.jpg">
+			<div class="label"><h2>لاله</h2></div>
+			<a href="Posts/laleh.html" class="more">ادامه مطلب ...</a>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="products">
+		  <div class="item-image">
+				<img src="images/سانسوریا.jpg">
+			<div class="label"><h2>سانسوریا</h2></div>
+			<a href="Posts/sansoria.html" class="more">ادامه مطلب ...</a>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="products">
+		  <div class="item-image">
+				<img src="images/پامچال.jpg">
+			<div class="label"><h2>پامچال</h2></div>
+			<a href="Posts/pamchal.html" class="more">ادامه مطلب ...</a>
+			</div>
+		</div>
+		<!-- content -->
+		<div class="products">
+		  <div class="item-image">
+				<img src="images/اگلونما.jpg">
+			<div class="label"><h2>آگلونما</h2></div>
+			<a href="Posts/aglonema.html" class="more">ادامه مطلب ...</a>
+			</div>
+		</div>
+		</div>
+	  </div>
+	  <div class="footer">
+			<a href="components/about-us.html" class="contact">
+					<i class="fa fa-question-circle"></i>
+			</a>
+			<a href="index.html" class="home-button">
+					<i class="fa fa-home"></i>
+			</a>
+			<a href="components/Video.html" class="category">
+							<i class="fa fa-video"></i>
+			</a>
+		</div>
+	</div>
+	<div id="cats" class="select-category" onclick="exitcat()">
+		<div class="text">دسته بندی موردنظرتان را انتخاب کنید :</div>
+			<a href="Categories/flowers.html">گل ها</a>
+			<a href="Categories/plants.html">گیاهان</a>	
+	</div>
+	<script>
+		function selectcat() {
+			document.getElementById('cats').style.display = "flex";
+		}
+		function exitcat() {
+			document.getElementById('cats').style.display = "none";
+		}
+	</script>
+  </body>
+</html>
